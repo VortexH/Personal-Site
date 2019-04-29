@@ -1,14 +1,68 @@
 html {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    /*
+    font-family: 'Amiri', serif;
+    */  
 }
 
-.menu ul {
+header h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+header h5 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+header img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
     list-style-type: none;
     font-size: 30px;
+    text-align: center;
 }
 
+.detweet p {
+    font-size: 13px;
+}
+
+.detweet h3 {
+    border-bottom: 2px solid black;
+}
+
+.airbnb_clone h3 {
+    border-bottom: 2px solid black;
+}
+
+.airbnb_clone p {
+    font-size: 13px;
+}
+
+.abalone p {
+    font-size: 13px;
+}
+
+.abalone h3 {
+    border-bottom: 2px solid black;
+}
+
+.project_type {
+    border: 2px dotted black;
+    text-align: center;
+}
 footer {
     text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
 }
 
 footer p {

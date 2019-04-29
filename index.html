@@ -2,99 +2,100 @@
 
 <HTML>
     <head>
-        <title>Hemant Heer</title>
+        <title>Life Long Learner</title>
         <link href='styles/style.css' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+
         <meta charset='utf-8'>
     </head>
 
     <body>
         <header>
             <h1>Hemant Heer</h1>
-            <nav class='menu'>
+            <h5><em>Chronicling my journey in programming</em></h5>
+            <nav>
                 <ul>
-                    <li class='menu_item'>About</li>
-                    <li class='menu_item'>Projects</li>
-                    <li class='menu_item'>Blog Posts</li>
-                    <li class='menu_item'>Resume</li> 
-                    <li class='menu_item'>Contact</li> 
+                    <li class='menu_item'><a href='https://medium.com/@hemant.heer'>Medium Blogs</a></li>
+                    <li class='menu_item'><a href='resume.pdf'>Resume</a></li> 
+                    <li class='menu_item'><a href='mailto:hemant.heer@gmail.com'>Email</a></li> 
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class='detweet'>
-                <a href='https://github.com/robertglatzel/detweet'><h2>deTweet</h2></a>
-                <p> Tweet Scrubber - Finds inappropriate words in your tweets and deletes them from your timeline
+            <h2 class='project_type'> Full Stack Web Applications</h2>
+            <article class='detweet'>
+                <h3> deTweet</h3>
+                <h4>Tech: <code>Python, Flask, Semantic UI, Javascript, HTML, and CSS</code></h4> 
+                <p> This is the crown jewel of my first year at
+                    Holberton School where I worked with <a href='https://github.com/robertglatzel'>Robert Glatzel</a> to develop the backend for this web application.</p>
+
+                <p> The backend for this web application is built within the Flask ecosystem using Flask-Dance, Flask-Login, FlaskSQLAlchemy, and MySQL.</p>
+
+                <p>I worked on this project during a 2 week timeframe at school and presented at a panel with Holberton Staff and mentors.</p>
+
+                <p> You can view the live demonstration of the app <a href='https://www.youtube.com/watch?v=tstfopdX9AE&list=PLlLHfkTcnvmN7UttKtSjc31vmF82tsJWd&index=6'>here.</a></p>
+            </article>
+
+
+            <article class='airbnb_clone'>
+                <h3> HBnB</h3>
+                <h4>Tech: <code>Python, Flask, Javascript, jQuery, HTML, CSS</code></h4>
+                <h4>Deployment Tech: <code>gunicorn, NGINX, Fabric, Bash scripts</code></h4>
+                <p> This is a web application that I've developed from client to server side. Essentially,
+                    it displays rental unit listings from a database of entries containing units in various states and cities.
                 </p>
-                <section class='technologies'>
-                    <h3> Technologies Used:</h3>
 
-                    <section class='frontend'>
-                        <h4> Front End</h4>
-                        <ul>
-                            <li> Javascript</li>
-                            <li> HTML5</li>
-                            <li> CSS</li>
-                            <li> JQuery</li>
-                            <li> Semantic UI</li>
-                        </ul>      
-                    </section>
-                    
-                    <section class='backend'>
-                        <h4>Back End</h4> 
-                        <ul>
-                            <li> Python</li>
-                            <li> Flask</li>
-                            <li> Flask SQLAlchemy</li>
-                            <li> Flask Login</li>
-                            <li> MySQL</li>
-                        </ul>
-                        </section>
-                    </section>
-                </section>
-            </section>
-
-
-            <section class='airbnb'>
-                <a href='https://github.com/VortexH/AirBnB_clone_v4'><h2>AirBnB</h2></a>
-                <p> Full stack app inspired by the real AirBnB for listing rental units in any place around the world
+                <p> Features include:
+                    <ul>
+                        <li><code>console</code></li>
+                        <li><code>JSON file storage</code></li>
+                        <li> <code>Database storage using SQLAlchemy</code></li>
+                        <li><code>Amenity, City, State, Place, Review, User classes</code></li>
+                        <li><code>Amenity filtration and dynamic loading of content using jQuery</code></li>
+                        <li><code>a public API to view, create, and delete rental unit listings</code></li>
+                    </ul>
                 </p>
-                <section class='technologies'>
-                    <h3> Technologies Used:</h3>
 
-                    <section class='frontend'>
-                        <h4> Front End</h4>
-                        <ul>
-                            <li> Javascript</li>
-                            <li> HTML5</li>
-                            <li> CSS</li>
-                            <li> JQuery</li>
-                        </ul>        
-                    </section>
-                    
-                    <section class='backend'>
-                        <h4>Back End</h4> 
-                        <ul>
-                            <li> Python</li>
-                            <li> Flask</li>
-                            <li> MySQL</li>
-                            <li> SQLAlchemy</li>
-                            <li>Jinja</li>
-                            <li>Fabric</li>
-                            <li>gunicorn</li>
-                            <li>NGINX</li>
-                        </ul>
-                    </section>
-                </section>
-            </section>
+                <p> Development of the project involved different team members for each phase of the project,
+                    unit testing, and pair programming.
+                </p>
+
+                <p> Hosted project on a web architecture containing 1 load balancer and a 2 web servers.
+                    Used application server, gunicorn, for serving content through NGINX and Fabric to pack and unpack
+                    tarballs containing content.
+                </p>
+            </article>
+
+            <h2 class='project_type'>Hackathons:</h2>
+
+            <article class='abalone'>
+                <h3>Abalone</h3>
+                <h4>Tech: <code>Python, Flask, Semantic UI, Javascript, jQuery, HTML, CSS, MySQL</code></h4>
+                <h4>Deployment Tech: <code>gunicorn, NGINX</code></h4>
+
+                <p>Mission: Develop a web application allowing users to comment on youtube videos.</p>
+                
+                <p>A group of 12 students from Holberton School developed the app as if we were all in a company.
+                    So that meant there were teams for: Front end, Back end, OAuth, Marketing, Project Management, and Site Reliability Engineering.
+                </p>
+
+                <p> I was part of the backend developing the routes for posting and retrieving comments from a MySQL database.
+                    The routes would be accessible from the front end and act as the engine for the comment engine.
+                </p>
+
+                <p></p>
+            </article>
         </main>
         <footer>
-            <a href='mailto:hemant.heer@gmail.com'> email </a>
-            <a href='https://github.com/VortexH'> github </a>
-            <a href='https://twitter.com/hemant_heer'> twitter </a>
-            <a href='https://linkedin.com/in/hemant_heer'> linkedin </a>
-            <a href='https://medium.com/@hemant.heer'>medium</a>
+            <h3>You can also find me on these platforms:</h3>
+            <ul>
+                <li class='footer_links'><a href='https://github.com/VortexH'> github </a> </li>
+                <li class='footer_links'><a href='https://twitter.com/hemant_heer'> twitter </a></li>
+                <li class='footer_links'><a href='https://linkedin.com/in/hemant_heer'> linkedin </a></li>
+                <li class='footer_links'><a href='https://medium.com/@hemant.heer'>medium</a></li>
+            </ul>
             <p>© Copyright 2019 by Hemant Heer. All rights reserved.</p>
 
         </footer>
