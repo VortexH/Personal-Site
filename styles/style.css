@@ -53,6 +53,38 @@ header nav ul {
     border-bottom: 2px solid black;
 }
 
+.kwikilinks p {
+    font-size: 13px;
+}
+
+.kwikilinks h3 {
+    border-bottom: 2px solid black;
+}
+
+.shell h3 {
+    border-bottom: 2px solid black;
+}
+
+.shell p {
+    font-size: 13px;
+}
+
+.monty h3 {
+    border-bottom: 2px solid black;
+}
+
+.monty p {
+    font-size: 13px;
+}
+
+.printf h3 {
+    border-bottom: 2px solid black;
+}
+
+.printf p {
+    font-size: 13px;
+}
+
 .project_type {
     border: 2px dotted black;
     text-align: center;
