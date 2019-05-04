@@ -37,6 +37,8 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: white;
+    -moz-transition: background-color 1s ease-out;
+    -webkit-transition: background-color 1s ease-out;
 }
 
 header nav ul li a:hover {
@@ -44,7 +46,7 @@ header nav ul li a:hover {
     border-top: 2px solid purple;
     border-bottom: 2px solid purple;
     */
-    background: #2576aa;
+    background-color: #2576aa;
 }
 
 .detweet p {
