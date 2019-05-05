@@ -1,32 +1,27 @@
-html {
-    font-family: 'Source Code Pro', monospace;
-    /*
-    font-family: 'Amiri', serif;
-    */  
-}
-
 header nav {
-    width: 100%;
-    background:#87d1ff;
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75em;
+    background:white;
 }
 
 header nav ul {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
     color: #f9fdff;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
     list-style-type: none;
-    font-size: 30px;
     text-align: right;
+    font-size: 20px;
 }
 
 
 .nav_name {
-    float: left;
     color: black;
+    float:left;
 }
+
 
 header nav ul li {
     display: inline-block;
@@ -36,87 +31,76 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: white;
-    -moz-transition: background-color 1s ease-out;
-    -webkit-transition: background-color 1s ease-out;
+    color: black;
 }
 
-header nav ul li a:hover {
-    /*
-    border-top: 2px solid purple;
-    border-bottom: 2px solid purple;
-    */
-    background-color: #2576aa;
+body {
+    background: #FAFAFA;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
 }
 
-.detweet p {
-    font-size: 13px;
+.nav_name {
+    font-weight: bold;
+}
+nav li:last-child::after {
+    content: "";
+}
+nav a {
+    font-weight: bold;
+}
+main {
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75em;
+}
+h2 {
+    margin-top: 2em;
+}
+article
+{
+    padding: 1em;
+    background: white;
+    border: solid 1px #EEE;
+    margin-bottom: 1em;
+    box-shadow: 0.25em 0.25em 0.125em #EEE;
 }
 
-.detweet h3 {
-    border-bottom: 2px solid black;
+article:last-child
+{
+    margin-bottom: 0px;
 }
 
-.airbnb_clone h3 {
-    border-bottom: 2px solid black;
-}
-
-.airbnb_clone p {
-    font-size: 13px;
-}
-
-.abalone p {
-    font-size: 13px;
-}
-
-.abalone h3 {
-    border-bottom: 2px solid black;
-}
-
-.kwikilinks p {
-    font-size: 13px;
-}
-
-.kwikilinks h3 {
-    border-bottom: 2px solid black;
-}
-
-.shell h3 {
-    border-bottom: 2px solid black;
-}
-
-.shell p {
-    font-size: 13px;
-}
-
-.monty h3 {
-    border-bottom: 2px solid black;
-}
-
-.monty p {
-    font-size: 13px;
-}
-
-.printf h3 {
-    border-bottom: 2px solid black;
-}
-
-.printf p {
-    font-size: 13px;
-}
-
-.project_type {
-    border: 2px dotted black;
-    text-align: center;
-}
 footer {
     text-align: center;
 }
 
 footer ul {
     list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
-footer p {
-    margin-bottom: 0px;
+
+footer ul li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer li:after {
+    content: '|';
+}
+
+footer li:last-child::after {
+    content: "";
 }
