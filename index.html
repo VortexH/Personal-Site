@@ -1,161 +1,41 @@
 <!DOCTYPE html>
 
-<HTML>
+<HTML lang='en'>
     <head>
-        <title>Hemant's Alcove on the Internet</title>
-        <link href='styles/style.css' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <title>Development Branch
+        </title>
         <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="lib/css/bootstrap.css">
+        <script src="lib/js/jquery-3.4.1.min.js"></script>
+        <script src="lib/js/bootstrap.bundle.js"></script>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class='nav_name'>Hemant Heer</li>
-                    <li class='menu_item'><a href='https://github.com/vortexh'>Github</a></li>
-                    <li class='menu_item'><a href='https://medium.com/@hemant.heer'>Blogs</a></li>
-                    <li class='menu_item'><a href='resume.pdf'>Resume</a></li> 
-                    <li class='menu_item'><a href='mailto:hemant.heer@gmail.com'>Email</a></li> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Hemant Heer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/vortexh">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://medium.com/@hemant.heer">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="resume.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="mailto:hemant.heer@gmail.com">Email</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-
-        <main>
-            <h2 class='project_type'> Full Stack Web Applications</h2>
-            <article class='detweet'>
-                <h3> deTweet</h3>
-                <h4>Tech: <code>Python, Flask, Semantic UI, Javascript, HTML, and CSS</code></h4> 
-                <h4>Project Source Code: <a href='https://github.com/VortexH/detweet'>detweet</a></h4>
-                <p> This is the crown jewel of my first year at
-                    Holberton School where I worked with <a href='https://github.com/robertglatzel'>Robert Glatzel</a> to develop the backend for this web application.</p>
-
-                <p> The backend for this web application is built within the Flask ecosystem using Flask-Dance, Flask-Login, FlaskSQLAlchemy, and MySQL.</p>
-
-                <p>I worked on this project during a 2 week timeframe at school and presented at a panel with Holberton Staff and mentors.</p>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tstfopdX9AE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-
-
-            <article class='airbnb_clone'>
-                <h3> HBnB</h3>
-                <h4>Tech: <code>Python, Flask, Javascript, jQuery, HTML, CSS</code></h4>
-                <h4>Deployment Tech: <code>gunicorn, NGINX, Fabric, Bash scripts</code></h4>
-                <h4>Project Source Code: <a href='https://github.com/VortexH/AirBnB_clone_v4'>hbnb</a></h4>
-
-                <p> This is a web application that I've developed from client to server side. Essentially,
-                    it displays rental unit listings from a database of entries containing units in various states and cities.
-                </p>
-
-                <p> Features include:
-                    <ul>
-                        <li><code>console</code></li>
-                        <li><code>JSON file storage</code></li>
-                        <li> <code>Database storage using SQLAlchemy</code></li>
-                        <li><code>Amenity, City, State, Place, Review, User classes</code></li>
-                        <li><code>Amenity filtration and dynamic loading of content using jQuery</code></li>
-                        <li><code>a public API to view, create, and delete rental unit listings</code></li>
-                    </ul>
-                </p>
-
-                <p> Development of the project involved different team members for each phase of the project,
-                    unit testing, and pair programming.
-                </p>
-
-                <p> Hosted project on a web architecture containing 1 load balancer and a 2 web servers.
-                    Used application server, gunicorn, for serving content through NGINX and Fabric to pack and unpack
-                    tarballs containing content.
-                </p>
-            </article>
-
-            <h2 class='project_type'>Hackathons:</h2>
-
-            <article class='abalone'>
-                <h3>Abalone</h3>
-                <h4>Tech: <code>Python, Flask, Semantic UI, Javascript, jQuery, HTML, CSS, MySQL</code></h4>
-                <h4>Deployment Tech: <code>gunicorn, NGINX</code></h4>
-                <h4>Project Source Code: <a href='https://github.com/VortexH/abalone'>abalone</a></h4>
-
-                <p>Mission: Develop a web application allowing users to comment on youtube videos.</p>
-                
-                <p>A group of 12 students from Holberton School developed the app as if we were all in a company.
-                    So that meant there were teams for: Front end, Back end, OAuth, Marketing, Project Management, and Site Reliability Engineering.
-                </p>
-
-                <p> I was part of the backend developing the routes for posting and retrieving comments from a MySQL database.
-                    The routes would be accessible from the front end and act as the engine for the comment engine.
-                </p>
-
-                <p>Learned the effects of a looming deadline on the project, development hiccups, among other realities of project development within a short
-                    timeline.
-                </p>
-            </article>
-
-            <article class='kwikilinks'>
-                <h3>KwikiLinks</h3>
-                <h4>Tech: <code>Python, Flask, WikipediaAPI, Bootstrap, Jinja, MySQL, Javascript, HTML, CSS</code></h4>
-                <h4>Deployment Tech: <code>uWSGI, NGINX</code></h4>
-                <h4>Project Source Code: <a href='https://github.com/VortexH/KwikiLinks_MVP'>kwikilinks</a></h4>
-
-                <p>
-                    Mission: Develop a web application that uses the Wikipedia API to display the degree of separation between
-                    2 wikipedia pages.
-                </p>
-
-                <p> I was the <em>Site Reliability Engineer</em> and <em>Project Manager</em> for this project so I had much less of
-                a coding role. It was an interesting experience using Trello boards and delegating responsibilites to your team but you face
-                a different set of problems. Teams report to you and relay their problems so your role is to find solutions to keep the project moving
-                in the right direction.</p>
-            </article>
-
-            <h2 class='project_type'>C Projects:</h2>
-            <article class='shell'>
-                <h3> Shell</h3>
-                <h4> Tech: <code> C</code></h4>
-                <h4>Project Source Code: <a href='https://github.com/VortexH/simple_shell'>shell</a></h4>
-
-                <p> Command line program that reads shell commands from the keyboard and executes them using Linux system calls. </p>
-
-
-                <p> Learned the fundamentals of programming using a low level language like C where memory management is all done
-                    manually.
-                </p>
-            </article>
-
-            <article class='monty'>
-                <h3>Monty</h3>
-                <h4> Tech: <code>C</code></h4>
-                <h4>Project Source Code: <a href='https://github.com/VortexH/monty'>monty</a></h4>
-
-                <p> Reads files for opcodes a builds a stack using a linked list.</p>
-
-                <p> Gained practical experience with building a <em>Last In First Out</em> data structure.</p>
-            </article>
-
-            <article class='printf'>
-                <h3>printf</h3>
-                <h4> Tech: <code>C</code></h4>
-                <h4>Project Source Code: <a href='https://github.com/VortexH/printf'>printf</a></h4>
-
-                <p> I gained an understanding of printing lines in C using a format string and variable number of arguments.</p>
-
-                <p>Integrated variadic functions to print digits, characters, strings, and binary numbers.</p>
-            </article>
-        </main>
-        <footer>
-            <ul>
-                <li class='footer_links'><a href='https://twitter.com/hemant_heer'> twitter </a></li>
-                <li class='footer_links'><a href='https://linkedin.com/in/hemant_heer'> linkedin </a></li>
-                <li class='footer_links'><a href='https://medium.com/@hemant.heer'>medium</a></li>
-            </ul>
-            <p>© Copyright 2019 by Hemant Heer. All rights reserved.</p>
-
-        </footer>
+            </div>
+        </nav>
     </body>
 </HTML>
