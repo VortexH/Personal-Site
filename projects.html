@@ -7,8 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="lib/css/bootstrap.css">
         <link rel='stylesheet' href='styles/style.css'>
-        <script src="lib/js/jquery-3.4.1.min.js"></script>
-        <script src="lib/js/bootstrap.bundle.js"></script>
+     
 
 
         	<!-- ****** faviconit.com favicons ****** -->
@@ -36,191 +35,135 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Hemant Heer</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
 
-                    <li class="nav-item active">
-                            <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" target=_blank href="https://github.com/vortexh">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target=_blank href="https://medium.com/@hemant.heer">Medium</a>
-                    </li>
-
-                    <li class='nav-item'>
-                        <a class='nav-link' target=_blank href='https://twitter.com/hemant_heer'>Twitter</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="resume.pdf">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="mailto:hemant.heer@gmail.com">Email</a>
-                    </li>
-                </ul>
-            </div>
+        <nav aria-label='breadcrumb'>
+            <ol class='breadcrumb'>
+                <li class='breadcrumb-item'><a href='index.html'>Home</a></li>
+                <li class='breadcrumb-item active' aria-current="page">Projects</li>
+            </ol>
         </nav>
 
         <div class='container-fluid mt-4'>
-            <div class="card-deck mt-auto">
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">deTweet</h5>
-                        <p class="card-text">This is a web application that finds inappropriate tweets, displays those tweets to the user, and lets users delete the ones that they don't like.</p>
-                    </div>
-                    <div class='card-body'>
-                        <button type='button' class='btn btn-info'>Github Source</button>
-                    </div>
-                    <div class='card-footer'>
-                        <small class='text-muted'>Developed the back end for the application in Python and Flask.</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">HBnB</h5>
-                        <p class="card-text">
-                                Web application, inspired by AirBnB, that displays rental units. Features a console, JSON file storage, Database storage using SQLAlchemy, filtration based on amenities within rental units, and a public RESTful API to view, create, and delete listings.
-                        </p>
-                    </div>
-
-                    <div class='card-body'>
-                        <button type='button' class='btn btn-info'>Github Source</button>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Covered development from client to server</small>
+            <div class='row mb-4'>
+                <div class='col-sm-4'>
+                    <div class='card'>
+                        <div class='card-body'>
+                            <h5 class='card-title'>deTweet</h5>
+                            <h6 class='card-subtitle mb-2 text-muted'>Tweet Scrubber</h6>
+                            <p class='card-text'>Web app that parses twitter profiles for inappropriate tweets, displays flagged tweets, and lets the user select which ones they want to delete</p>
+                            <a href='https://github.com/VortexH/detweet' class='card-link'>Github Source</a>
+                            <a href='https://twitter.com/rglatzell' class='card-link'>My Partner's Twitter</a>
+                        </div>
+                        <div class='card-footer'>
+                            <code>Python, Flask, Javascript, MySQL, Semantic UI</code>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">HBnB</h5>
-                            <p class="card-text">
+                <div class='col-sm-4'>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>HBnB</h5>
+                                <h6 class='card-subtitle mb-2 text-muted'>Vacation Listings</h6>
+                                <p class='card-text'>Displays rental listings from a database of locations. Inspired by the real AirBnB. Features a developer console, a RESTful API,
+                                    database storage powered by SQLAlchemy, on disk JSON storage, and client side filtration based on location amenities
+                                </p>
+                                <a href='https://github.com/VortexH/AirBnB_clone_v4' class='card-link'>Github Source</a>
+                            </div>
+                            <div class='card-footer'>
+                                <code>Python, Flask, SQLAlchemy, MySQL, Javascript, jQuery, HTML, CSS</code>
+                            </div>
+                        </div>
+                </div>
+
+                <div class='col-sm-4'>
+                    <div class='card'>
+                        <div class='card-body'>
+                            <h5 class='card-title'>Abalone</h5>
+                            <h6 class='card-subtitle mb-2 text-muted'>Platform for shared commentary on youtube videos</h6>
+                            <p class='card-text'>The result of a 24 hour hackathon to develop a web application that allows users to chat with each other under any youtube video
                             </p>
+                            <a href='https://github.com/VortexH/abalone' class='card-link'>Github Source</a>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class='card-footer'>
+                            <code>Python, Flask, SQLAlchemy, MySQL, Javascript, jQuery, HTML, CSS</code>
                         </div>
                     </div>
+                </div>
             </div>
 
+            <div class='row mb-4'>
+                <div class='col-sm-4'>
+                    <div class='card'>
+                        <div class='card-body'>
+                            <h5 class='card-title'>Kwikilinks</h5>
+                            <h6 class='card-subtitle mb-2 text-muted'>Fun app thats shows the Wikipedia page separation between 2 wiki links</h6>
+                            <p class='card-text'>Developed under a 24 hour timeline to deliver an application that finds the least number of jumps to get to one page from another
+                            </p>
+
+                            <p class='card-text'> I was the <em>Site Reliability Engineer</em> and <em>Project Manager</em> for this project so I had much less of
+                                a coding role.</p>
+                            <a href='https://github.com/VortexH/KwikiLinks_MVP' class='card-link'>Github Source</a>
+                        </div>
+                        <div class='card-footer'>
+                            <code>Python, Flask, WikipediaAPI, Bootstrap, Jinja, MySQL, Javascript, HTML, CSS</code>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='col-sm-4'>
+                    <div class='card'>
+                        <div class='card-body'>
+                            <h5 class='card-title'>Shell</h5>
+                            <h6 class='card-subtitle mb-2 text-muted'>Simple Bash Clone</h6>
+                            <p class='card-text'>Command line program that reads shell commands from the keyboard and executes them using Linux system calls</p>
+                            <p class='card-text'>Learned the fundamentals of programming using a low level language like C where memory management is all done
+                                    manually</p>
+
+                            <a href='https://github.com/vortexh/simple_shell'>Github Source</a>
+                        </div>
+                        <div class='card-footer'>
+                            <code>C</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-sm-4'>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Monty</h5>
+                                <h6 class='card-subtitle mb-2 text-muted'>LIFO/FIFO Constructor</h6>
+                                <p class='card-text'>Reads files for opcodes a builds a stack using a linked list</p>
+                                <p class='card-text'>Gained practical experience with building a <em>Last In First Out</em> data structure</p>
+    
+                                <a href='https://github.com/VortexH/monty'>Github Source</a>
+                            </div>
+                            <div class='card-footer'>
+                                <code>C</code>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class='col-sm-4'>
+                            <div class='card'>
+                                <div class='card-body'>
+                                    <h5 class='card-title'>Printf</h5>
+                                    <h6 class='card-subtitle mb-2 text-muted'>Simple Implementation of C's printf</h6>
+                                    <p class='card-text'> Gained an understanding of printing lines in C using a format string and variable number of arguments.</p>
+                                    <p class='card-text'>Integrated variadic functions to print digits, characters, strings, and binary numbers.</p>
+        
+                                    <a href='https://github.com/VortexH/printf'>Github Source</a>
+                                </div>
+                                <div class='card-footer'>
+                                    <code>C</code>
+                                </div>
+                            </div>
+                </div>
+            </div>
         </div>
-
-
-        <article class='airbnb_clone'>
-            <h3> HBnB</h3>
-            <h4>Tech: <code>Python, Flask, Javascript, jQuery, HTML, CSS</code></h4>
-            <h4>Deployment Tech: <code>gunicorn, NGINX, Fabric, Bash scripts</code></h4>
-            <h4>Project Source Code: <a href='https://github.com/VortexH/AirBnB_clone_v4'>hbnb</a></h4>
-
-            <p> This is a web application that I've developed from client to server side. Essentially,
-                it displays rental unit listings from a database of entries containing units in various states and cities.
-            </p>
-
-            <p> Features include:
-                <ul>
-                    <li><code>console</code></li>
-                    <li><code>JSON file storage</code></li>
-                    <li> <code>Database storage using SQLAlchemy</code></li>
-                    <li><code>Amenity, City, State, Place, Review, User classes</code></li>
-                    <li><code>Amenity filtration and dynamic loading of content using jQuery</code></li>
-                    <li><code>a public API to view, create, and delete rental unit listings</code></li>
-                </ul>
-            </p>
-
-            <p> Development of the project involved different team members for each phase of the project,
-                unit testing, and pair programming.
-            </p>
-
-            <p> Hosted project on a web architecture containing 1 load balancer and a 2 web servers.
-                Used application server, gunicorn, for serving content through NGINX and Fabric to pack and unpack
-                tarballs containing content.
-            </p>
-        </article>
-
-        <h2 class='project_type'>Hackathons:</h2>
-
-        <article class='abalone'>
-            <h3>Abalone</h3>
-            <h4>Tech: <code>Python, Flask, Semantic UI, Javascript, jQuery, HTML, CSS, MySQL</code></h4>
-            <h4>Deployment Tech: <code>gunicorn, NGINX</code></h4>
-            <h4>Project Source Code: <a href='https://github.com/VortexH/abalone'>abalone</a></h4>
-
-            <p>Mission: Develop a web application allowing users to comment on youtube videos.</p>
-            
-            <p>A group of 12 students from Holberton School developed the app as if we were all in a company.
-                So that meant there were teams for: Front end, Back end, OAuth, Marketing, Project Management, and Site Reliability Engineering.
-            </p>
-
-            <p> I was part of the backend developing the routes for posting and retrieving comments from a MySQL database.
-                The routes would be accessible from the front end and act as the engine for the comment engine.
-            </p>
-
-            <p>Learned the effects of a looming deadline on the project, development hiccups, among other realities of project development within a short
-                timeline.
-            </p>
-        </article>
-
-        <article class='kwikilinks'>
-            <h3>KwikiLinks</h3>
-            <h4>Tech: <code>Python, Flask, WikipediaAPI, Bootstrap, Jinja, MySQL, Javascript, HTML, CSS</code></h4>
-            <h4>Deployment Tech: <code>uWSGI, NGINX</code></h4>
-            <h4>Project Source Code: <a href='https://github.com/VortexH/KwikiLinks_MVP'>kwikilinks</a></h4>
-
-            <p>
-                Mission: Develop a web application that uses the Wikipedia API to display the degree of separation between
-                2 wikipedia pages.
-            </p>
-
-            <p> I was the <em>Site Reliability Engineer</em> and <em>Project Manager</em> for this project so I had much less of
-            a coding role. It was an interesting experience using Trello boards and delegating responsibilites to your team but you face
-            a different set of problems. Teams report to you and relay their problems so your role is to find solutions to keep the project moving
-            in the right direction.</p>
-        </article>
-
-        <h2 class='project_type'>C Projects:</h2>
-        <article class='shell'>
-            <h3> Shell</h3>
-            <h4> Tech: <code> C</code></h4>
-            <h4>Project Source Code: <a href='https://github.com/VortexH/simple_shell'>shell</a></h4>
-
-            <p> Command line program that reads shell commands from the keyboard and executes them using Linux system calls. </p>
-
-
-            <p> Learned the fundamentals of programming using a low level language like C where memory management is all done
-                manually.
-            </p>
-        </article>
-
-        <article class='monty'>
-            <h3>Monty</h3>
-            <h4> Tech: <code>C</code></h4>
-            <h4>Project Source Code: <a href='https://github.com/VortexH/monty'>monty</a></h4>
-
-            <p> Reads files for opcodes a builds a stack using a linked list.</p>
-
-            <p> Gained practical experience with building a <em>Last In First Out</em> data structure.</p>
-        </article>
-
-        <article class='printf'>
-            <h3>printf</h3>
-            <h4> Tech: <code>C</code></h4>
-            <h4>Project Source Code: <a href='https://github.com/VortexH/printf'>printf</a></h4>
-
-            <p> I gained an understanding of printing lines in C using a format string and variable number of arguments.</p>
-
-            <p>Integrated variadic functions to print digits, characters, strings, and binary numbers.</p>
-        </article>
-
+        <script src="lib/js/jquery-3.4.1.min.js"></script>
+        <script src="lib/js/bootstrap.bundle.js"></script>
     </body>
 </HTML>
