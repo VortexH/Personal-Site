@@ -1,0 +1,32 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "This is the source code for my personal playground (so to speak).",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VortexH/Personal-Site.git"
+  },
+  "author": "Hemant Heer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VortexH/Personal-Site/issues"
+  },
+  "homepage": "https://github.com/VortexH/Personal-Site#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
