@@ -45,7 +45,7 @@
                 </div>
 
                 <div class='col'>
-                    <h2>I've come a long way since my days on the East Coast</h2>
+                    <h2 class='d-none d-sm-block'>I've come a long way since my days on the East Coast</h2>
                     <p>I grew up in Queens for the first half of my life and spent the next decade leaving and breathing Upstate NY.</p>
                     <p>I went to Binghamton University from 2011 - 2015 where I studied Bioengineering.</p>
                 </div>
@@ -88,7 +88,7 @@
 
                     <p>Enter my time at Holberton School.</p>
 
-                    <img src='images/IMG_0034.jpg' class='img-fluid'>
+                    <img src='images/IMG_0034.jpg' class='img-fluid' alt='A view of the Golden Gate Bridge at the Crissy Field beach with the sun setting in the horizon'>
                 </div>
             </div>
 
@@ -120,6 +120,13 @@
                             </tr>
 
                             <tr>
+                                    <th scope='row'>Monty</th>
+                                    <td>Bytecode Interpreter that builds a Stack or a Queue</td>
+                                    <td><a href='https://github.com/VortexH/monty'>github.com/VortexH/monty</a></td>
+                                    <td><code>C</code></td>
+                            </tr>
+
+                            <tr>
                                 <th scope='row'>HBnB</th>
                                 <td>Vacation Housing App</td>
                                 <td><a href='https://github.com/VortexH/AirBnB_clone_v4'>github.com/VortexH/AirBnB_clone_v4</a></td>
@@ -128,15 +135,71 @@
 
                             <tr>
                                 <th scope='row'>Abalone</th>
-                                <td>Chat Platform built during a Hackathon. Built a Commenting API.</td>
+                                <td>Chat Platform built during a Hackathon where I wrote a Commenting API.</td>
                                 <td><a href='https://github.com/VortexH/abalone'>github.com/VortexH/abalone</a></td>
-                                <td><code>Python, Flask, SQL, MySQL</code></td>
+                                <td><code>Python, Flask, MySQL</code></td>
+                            </tr>
+
+                            <tr>
+                                <th scope='row'>deTweet</th>
+                                <td>Twitter timeline scrubber, in case you want certain tweets to disappear</td>
+                                <td><a href='https://detweet.online'>detweet.online</a></td>
+                                <td><code>Python, Flask, Flask-Dance, Flask-Login, MySQL, Fabric, Gunicorn, NGINX</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+
+            <div class='row row-content'>
+                <div class='col-sm-6'>
+                    <h3>deTweet is the biggest project I've launched</h3>
+                    <p>I've been responsible for building the backend using Flask and played an active role in deploying the app to a Digital Ocean droplet.</p>
+                    
+                    <p>I'm proud of getting to this point where I can host my own applications on bare servers.</p>
+                    
+                    <a class='btn btn-warning' href='https://detweet.online'>Live Build of deTweet</a>
+                    <p>While, you're at it, here's a live demo of the app where my partner and I talked about the project at Holberton School.</p>
+                </div>
+                <div class='col-sm-6'>
+                    <div class='youtube-video d-none d-xl-block'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tstfopdX9AE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+                    </div>
+                    <div class='d-xl-none'>
+                        <a class='btn btn-info' href='https://www.youtube.com/embed/tstfopdX9AE'>Watch the Presentation</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <footer class='footer'>
+            <div class='container'>
+                <div class='row links'>
+                    <div class='col'>
+                        <h5>Address</h5>
+                        <address>
+                            San Francisco Bay Area <br>
+                            United States of America <br>
+                            Tel: +1 607 727 7787 <br>
+                            Email: <a href='mailto:hemant.heer@gmail.com'>hemant.heer@gmail.com</a>
+                        </address>
+                    </div>
+                    <div class='col align-self-center'>
+                        <div class='text-center'>
+                            <a href='https://www.twitter.com/hemant_heer'>Twitter</a>
+                            <a href='https://linkedin.com/in/hemantheer'>LinkedIn</a>
+                            <a href='https://medium.com/@hemant.heer'>Medium</a>
+                            <a href='https://github.com/VortexH'>Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center'>
+                    <div class='col-auto'>
+                        <p>Copyright 2019 Hemant Heer</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src='node_modules/jquery/dist/jquery.min.js'></script>
         <script src='node_modules/popper.js/dist/umd/popper.min.js'></script>
         <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
