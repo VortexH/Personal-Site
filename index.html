@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content='ie-edge'>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel='stylesheet' href='styles/style.css'>
+        <link rel='stylesheet' href='styles/styles.css'>
     </head>
 
     <body>
@@ -39,6 +39,7 @@
                     <hr>
                 </div>
             </div>
+            
             <div class='row row-content'>
                 <div class='col-12 col-sm-6'>
                     <h3>Who exactly am I?</h3>
@@ -46,7 +47,7 @@
 
                 <div class='col-12 col-sm-6'>
                     <h2 class='d-none d-sm-block'>I've come a long way since my days on the East Coast</h2>
-                    <p>I grew up in Queens for the first half of my life and spent the next decade leaving and breathing Upstate NY.</p>
+                    <p>I grew up in Queens for the first half of my life and spent the next decade living and breathing Upstate NY.</p>
                     <p>I went to Binghamton University from 2011 - 2015 where I studied Bioengineering.</p>
                 </div>
             </div>
@@ -55,7 +56,7 @@
             <div class='row row-content'>
                 <div class='col'>
                     <h3>Courses Contributing to my Career</h3>
-                    <ul class='list-unstyled'>
+                    <ul>
                         <li>Biological Networks</li>
                         <li>Circuits and Signals</li>
                         <li>Numerical Methods</li>
@@ -68,7 +69,7 @@
                 </div>
                 <div class='col'>
                     <h3>Papers that I've Written as a Bioengineering Student</h3>
-                    <ul class='list-unstyled'>
+                    <ul>
                         <li><a href='documents/BE202-final-project.pdf'>Influence of Classical Music Composers</a></li>
                         <li><a href='documents/BE260-final-project.pdf'>Fourier Analysis of Respiratory Signal</a></li>
                         <li><a href='documents/BE203-final-project.pdf'>Implementing a GUI in MATLAB for Naive Gaussian Elimination</a></li>
@@ -92,62 +93,88 @@
                 </div>
             </div>
 
-            <div class='row row-content'>
-                <div class='col'>
+            <div class='row row-content align-items-center'>
+                <div class='col col-xl-12'>
                     <h3>Low Level, Object Oriented, and Web Technologies</h3>
-                    <p>Algorithms, Data Structures, and Projects were either implemented in C or Python.</p>
-                    <table class='table'>
-                        <thead>
-                            <tr>
-                                <th scope='col'>Project</th>
-                                <th scope='col'>Short Description</th>
-                                <th scope='col'>Github Source</th>
-                                <th scope='col'>Technologies</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope='row'>Printf</th>
-                                <td>Basic implementation of the printf function C's standard library</td>
-                                <td><a href='https://github.com/VortexH/printf'>github.com/VortexH/printf</a></td>
-                                <td><code>C</code></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>Shell</th>
-                                <td>Command line program that runs shell commands</td>
-                                <td><a href='https://github.com/VortexH/simple_shell'>github.com/VortexH/simple_shell</a></td>
-                                <td><code>C</code></td>
-                            </tr>
+                    <p>I've built a number of projects to showcase my software development skills</p>
+                </div>
 
-                            <tr>
-                                    <th scope='row'>Monty</th>
-                                    <td>Bytecode interpreter that builds a FIFO/LIFO data structure</td>
-                                    <td><a href='https://github.com/VortexH/monty'>github.com/VortexH/monty</a></td>
-                                    <td><code>C</code></td>
-                            </tr>
+                <div class='col-12 col-xl-4'>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">printf_</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">A basic implementation of C's STDIO printf</h6>
+                            <p class="card-text">Implemented using a variadic function and features the ability to print characters, strings, and binary numbers. </p>
+                            <code><p class='card-text'>Tech Stack: C</p> </code>
+                            <br>                     
+                            <a href="https://github.com/VortexH/printf" class="card-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
 
-                            <tr>
-                                <th scope='row'>HBnB</th>
-                                <td>Vacation housing app inspired by the real AirBnB</td>
-                                <td><a href='https://github.com/VortexH/AirBnB_clone_v4'>github.com/VortexH/AirBnB_clone_v4</a></td>
-                                <td><code>Python, Flask, jQuery, JS/HTML/CSS, SQL, MySQL</code></td>
-                            </tr>
+                <div class='col-12 col-xl-4'>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Shell</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Implementing the basic features of <code>sh</code></h6>
+                                <p class="card-text">Command line program that executes commands available in the PATH using fork, exec, and wait</p>
+                                <code><p class='card-text'>Tech Stack: C</p> </code>
+                                <br>
+                                <a href="https://github.com/VortexH/simple_shell" class="card-link">Source Code</a>
+                            </div>
+                        </div>
+                </div>
 
-                            <tr>
-                                <th scope='row'>Abalone</th>
-                                <td>Chat platform built during a 24 hour hackathon in which I personally built a commenting api</td>
-                                <td><a href='https://github.com/VortexH/abalone'>github.com/VortexH/abalone</a></td>
-                                <td><code>Python, Flask, MySQL</code></td>
-                            </tr>
+                <div class='col-12 col-xl-4'>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Monty</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">OPCode Parser that builds either a FIFO/LIFO data structure</h6>
+                                <p class="card-text">Parses files for opcodes and builds a stack or a queue using a singly linked list.</p>
+                                <code><p class='card-text'>Tech Stack: C</p> </code>
+                                <br>
+                                <a href="https://github.com/VortexH/monty" class="card-link">Source Code</a>
+                            </div>
+                        </div>
+                </div>
 
-                            <tr>
-                                <th scope='row'>deTweet</th>
-                                <td>Twitter timeline scrubber for those who want certain tweets gone</td>
-                                <td><a href='https://detweet.online'>detweet.online</a></td>
-                                <td><code>Python, Flask, Flask-Dance, Flask-Login, MySQL, Fabric, Gunicorn, NGINX</code></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class='col-12 col-xl-4'>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">HBnB</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Vacation housing app inspired by the real AirBnB</h6>
+                                <p class="card-text">Features a RESTful API, JSON/DB storage, and the ability to filter listings via amenities and locations. Can self host on bare servers using Gunicorn and NGINX.</p>
+                                <code><p class='card-text'>Tech Stack: Python, Flask, jQuery, JS/HTML/CSS, SQLAlchemy, MySQL</p> </code>
+                                <br>
+                                <a href="https://github.com/VortexH/AirBnB_clone_v4" class="card-link">Source Code</a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class='col-12 col-xl-4'>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Abalone</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Chat platform built during a 24 hour hackathon</h6>
+                                <p class="card-text">Built a commenting API using Flask, Python, and MySQL to power the ability chat with other users.</p>
+                                <code><p class='card-text'>Tech Stack: Python, Flask, MySQL</p> </code>
+                                <br>
+                                <a href="https://github.com/VortexH/abalone" class="card-link">Source Code</a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class='col-12 col-xl-4'>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">deTweet</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Twitter timeline scrubber for those tweets you want to delete</h6>
+                            <p class="card-text">Built the backend using Flask, Flask-Dance (OAuth integration), Flask-Login, and SQLite.</p>
+                            <code><p class='card-text'>Tech Stack: Python, Flask, Flask-Dance, Flask-Login, Semantic UI, JS/HTML/CSS, SQLite</p> </code>
+                            <br>
+                            <a href="https://github.com/robertglatzel/detweet" class="card-link">Source Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -201,5 +228,6 @@
         <script src='node_modules/jquery/dist/jquery.min.js'></script>
         <script src='node_modules/popper.js/dist/umd/popper.min.js'></script>
         <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+        <script src='scripts/main.js'></script>
     </body>
 </HTML>
